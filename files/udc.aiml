@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Hello, would you like to learn what career path may be a best fit for you with your computer science degree?
+        </template>
+    </category>
+    <category>
+        <pattern> no </pattern>
+        <that>*</that>
+        <template>
+          Okay that is all we do here, goodbye now.   
+        </template>
+    </category>
+    <category>
+        <pattern>yes</pattern>
+        <that>*</that>
+        <template>
+            Okay let's get started. Do you do your best work in in: 
+            <reply>
+                <text>developing</text>
+                <postback>dev</postback>
+            </reply>
+            <reply>
+                <text>other</text>
+                <postback>other</postback>
+            </reply>
+        </template>
+    </category>
+    <category>
+        <pattern>dev</pattern>
+        <template>
+            Great so you work great in developing. Would you prefer developing: 
+            <reply>
+                <text>websites</text>
+                <postback>webdev</postback>
+            </reply> 
+            <reply>
+                <text>complex programs</text>
+                <postback>softdev</postback>
+            </reply>
+        </template>
+    </category>
+    <category>
+        <pattern>webdev</pattern>
+        <template>
+            Calculating....I have found a career that may work for you! Web Development 
+        </template>
+    </category>
+    <category>
+        <pattern>softdev</pattern>
+        <template>
+            Calculating....I have found a career that may work for you! Software Development 
+        </template>
+    </category>
+    <category>
+        <pattern>other</pattern>
+        <template>
+            Great so you work great in other tasks than developing. Do you like working with: 
+            <reply>
+                <text>data</text>
+                <postback>data</postback>
+            </reply>
+            <reply>
+                <text>networks</text>
+                <postback>networks</postback>
+            </reply>
+        </template>
+    </category>
+    <category>
+        <pattern>networks</pattern>
+        <template>
+            Calculating....I have found a career that may work for you! Network Administrator  
+        </template>
+    </category>
+    <category>
+        <pattern>data</pattern>
+        <template>
+            Great so you enjoy working with data. Do you prefer:
+            <reply>
+                <text>analyzing</text>
+                <postback>analyzing</postback>
+            </reply>
+            <reply>
+                <text>organizing</text>
+                <postback>organizing</postback>
+            </reply> 
+        </template>
+    </category>
+    <category>
+        <pattern>analyzing</pattern>
+        <template>
+            Calculating....I have found a career that may work for you! Data Analyst  
+        </template>
+    </category>
+    <category>
+        <pattern>organizing</pattern>
+        <template>
+            Calculating....I have found a career that may work for you! Database Administrator   
+        </template>
+    </category>
+</aiml>
